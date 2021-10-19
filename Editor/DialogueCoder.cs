@@ -167,9 +167,11 @@ namespace DialogueSystem.Code
 
         private static void CleanDirectory() 
         {
-            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem/Runtime/GeneratedCode"))
-                AssetDatabase.CreateFolder("Runtime", "GeneratedCode");
-            string[] CodeFolder = { "Assets/DialogueSystem/Runtime/GeneratedCode" };
+            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem"))
+                AssetDatabase.CreateFolder("Assets", "DialogueSystem");
+            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem/GeneratedCode"))
+                AssetDatabase.CreateFolder("Assets/DialogueSystem", "GeneratedCode");
+            string[] CodeFolder = { "Assets/DialogueSystem/GeneratedCode" };
             foreach (var codeFile in AssetDatabase.FindAssets(string.Empty, CodeFolder)) 
             {
                 var path = AssetDatabase.GUIDToAssetPath(codeFile);
