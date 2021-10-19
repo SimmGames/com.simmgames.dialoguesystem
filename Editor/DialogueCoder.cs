@@ -148,13 +148,15 @@ namespace DialogueSystem.Code
         }
         private static void WriteString(string code, string file)
         {
-            string path = $"Assets/DialogueSystem/Runtime/GeneratedCode/{file}.cs";
+            string path = $"Assets/DialogueSystem/GeneratedCode/{file}.cs";
 
             // Clean inconsistant new line characters
             code = Regex.Replace(code, @"\r\n?|\n", System.Environment.NewLine);
 
-            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem/Runtime/GeneratedCode"))
-                AssetDatabase.CreateFolder("Assets/DialogueSystem/Runtime", "GeneratedCode");
+            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem"))
+                AssetDatabase.CreateFolder("Assets", "DialogueSystem");
+            if (!AssetDatabase.IsValidFolder("Assets/DialogueSystem/GeneratedCode"))
+                AssetDatabase.CreateFolder("Assets/DialogueSystem", "GeneratedCode");
 
             // Write the code to a CS file
             StreamWriter writer = new StreamWriter(path, false);
