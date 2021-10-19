@@ -1,4 +1,4 @@
-# Dialogue System v2.0.1
+# Dialogue System v2.0.2
 # About
 [To-Do](https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System#to-do) | [Manual](https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System#manual) | [Scripting API](https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System#scripting-api)
 

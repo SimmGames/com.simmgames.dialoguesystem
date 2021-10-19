@@ -1,6 +1,6 @@
 {
     "name" : "com.simmgames.dialoguesystem",
-    "version" : "2.0.1",
+    "version" : "2.0.2",
     "description": "A Dialogue System for Unity",
     "displayName": "Dialogue System",
     "unity": "2020.3",
@@ -14,8 +14,4 @@
     "hideInEditor": false,
     "keywords": ["dialogue", "conversation"],
     "license": "MIT",
-    "dependencies": 
-    {
-        "com.unity.textmeshpro": "3.0.6"
-    }
 }

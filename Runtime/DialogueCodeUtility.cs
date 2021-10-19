@@ -38,10 +38,11 @@ namespace DialogueSystem.Code
         public static IDialogueCode GetDialogueCode(string dialogueName) 
         {
             string className = $"DialogueSystem.Code.{GenerateClassName(dialogueName)}";
-            Assembly asm = typeof(IDialogueCode).Assembly;
+            Assembly asm = Assembly.Load("Assembly-CSharp");
             Type type = asm.GetType(className);
             if (type != null)
                 return (IDialogueCode)Activator.CreateInstance(type);
+            Debug.LogError($"Could not find the Generated Code for \"{dialogueName}\".\nPlease generate this code under Window > Dialogue System > Regenerate Code");
             return null;
         }
     }
