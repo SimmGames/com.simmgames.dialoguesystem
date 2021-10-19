@@ -1,0 +1,20 @@
+{
+    "name" : "com.simmgames.dialoguesystem",
+    "version" : "2.0.0",
+    "description": "A Dialogue System for Unity",
+    "displayName": "Dialogue System",
+    "unity": "2020.3",
+    "author": 
+    {
+        "name": "Owen Ravelo",
+        "url": "https://simmgames.com/"
+    },
+    "documentationUrl": "https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System",
+    "hideInEditor": true,
+    "keywords": ["dialogue", "conversation"],
+    "license": "MIT",
+    "dependencies": 
+    {
+        "com.unity.textmeshpro": "3.0.6"
+    }
+}
