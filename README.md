@@ -14,6 +14,13 @@ The Dialogue Graph can be opened in **Window\>Dialogue System\>Dialogue Graph**.
 
 ![Dialogue Graph Screenshot](https://raw.githubusercontent.com/SimmGames/ProductionTools/main/Wiki/DialogueSystem/DialogueGraph.png)
 
+# How To Install
+
+1. Open up Unity's Package Manager (**Window\>Package Manager**)
+2. In the top left, hit the **Plus** button and select **Add package from git URL...**
+3. In the box, paste the package's git repository `https://github.com/SimmGames/com.simmgames.dialoguesystem.git` then hit Add
+4. Everything should be installed after that! Samples are located at **Assets\>Dialogue System\>Samples**
+
 # To-Do
 - [ ]  Create Separate File to define Nodes [#13](https://github.com/SimmGames/ProductionTools/issues/13)
 - [ ]  Add an End Node [#14](https://github.com/SimmGames/ProductionTools/issues/14)

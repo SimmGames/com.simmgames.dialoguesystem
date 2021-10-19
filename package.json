@@ -1,16 +1,17 @@
 {
     "name" : "com.simmgames.dialoguesystem",
-    "version" : "2.0.0",
+    "version" : "2.0.1",
     "description": "A Dialogue System for Unity",
     "displayName": "Dialogue System",
     "unity": "2020.3",
     "author": 
     {
-        "name": "Owen Ravelo",
+        "name": "sim2kid",
+        "email": "contact@simmgames.com",
         "url": "https://simmgames.com/"
     },
     "documentationUrl": "https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System",
-    "hideInEditor": true,
+    "hideInEditor": false,
     "keywords": ["dialogue", "conversation"],
     "license": "MIT",
     "dependencies": 
