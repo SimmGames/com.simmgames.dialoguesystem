@@ -13,5 +13,12 @@
     "documentationUrl": "https://github.com/SimmGames/ProductionTools/wiki/Dialogue-System",
     "hideInEditor": false,
     "keywords": ["dialogue", "conversation"],
-    "license": "MIT"
+    "license": "MIT",
+    "samples": [
+        {
+            "displayName": "Basic Implementation Example",
+            "description": "Contains a basic scene and script to run a dialogue. Be sure to generate the dialogue before running. Requires TextMeshPro.",
+            "path": "Samples~/Dialogue Sample"
+        }
+    ]
 }
