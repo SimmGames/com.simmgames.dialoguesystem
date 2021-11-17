@@ -109,17 +109,8 @@ namespace DialogueSystem.Code
 {
     public class ";
 
-            string precode2 = @" : IDialogueCode
+            string precode2 = @" : IDialogueCode, DialogueCode
     {
-        private Dictionary<string, IDialogueCode.EventDelegate> eventFunctions = new Dictionary<string, IDialogueCode.EventDelegate>();
-        private Dictionary<string, IDialogueCode.ConditionDelegate> conditionChecks = new Dictionary<string, IDialogueCode.ConditionDelegate>();
-        private Dictionary<string, IDialogueCode.ConditionDelegate> dialogueChecks = new Dictionary<string, IDialogueCode.ConditionDelegate>();
-        public Dictionary<string, IDialogueCode.EventDelegate> EventFunctions => eventFunctions;
-        public Dictionary<string, IDialogueCode.ConditionDelegate> ConditionChecks => conditionChecks;
-        public Dictionary<string, IDialogueCode.ConditionDelegate> DialogueChecks => dialogueChecks;
-        public string GetVariable(string variableName) {
-            return this.GetType().GetField(variableName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(this).ToString(); 
-        }
         public ";
             string precode3 = @"() 
         {
