@@ -109,7 +109,7 @@ namespace DialogueSystem.Code
 {
     public class ";
 
-            string precode2 = @" : IDialogueCode, DialogueCode
+            string precode2 = @" : DialogueCode, IDialogueCode
     {
         public ";
             string precode3 = @"() 
