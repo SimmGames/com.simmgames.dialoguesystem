@@ -74,7 +74,7 @@ namespace DialogueSystem.Editor
                                 {
                                     functionName = DialogueCodeUtility.GenerateFunctionName(container.DialogueName, node.Guid, port.PortGUID);
 
-                                    dialogueChecks += $"{Tab(2)}// From Node: {node.Guid} //\n{Tab(2)}// Choice: {port.PortName} - {port.PortGUID} //\n";
+                                    dialogueChecks += $"{Tab(2)}// From Node: {node.Guid} //\n{Tab(2)}// Choice: {CleanReturn(port.PortName)} - {port.PortGUID} //\n";
                                     dialogueChecks += $"{Tab(2)}public bool {functionName}()\n{Tab(2)}{{\n{Tab(3)}return (";
                                     dialogueChecks += (string.IsNullOrEmpty(port.Condition.Trim()) ? "true" : port.Condition);
                                     dialogueChecks += $");\n{Tab(2)}}}\n";
@@ -131,6 +131,11 @@ namespace DialogueSystem.Code
             for (int i = 0; i < amount; i++)
                 back += "    ";
             return back;
+        }
+
+        private static string CleanReturn(string str) 
+        {
+            return str.Replace("\n", "\\n").Replace("\r", "\\r");
         }
 
         private static string SanitizeName(string name)
