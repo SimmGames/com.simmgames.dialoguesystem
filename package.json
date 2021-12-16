@@ -1,6 +1,6 @@
 {
     "name" : "com.simmgames.dialoguesystem",
-    "version" : "2.0.4",
+    "version" : "2.0.5",
     "description": "A Dialogue System for Unity",
     "displayName": "Dialogue System",
     "unity": "2020.3",

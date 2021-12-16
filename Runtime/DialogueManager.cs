@@ -408,7 +408,7 @@ namespace DialogueSystem
         {
             
             string text = DialogueCodeUtility.GetTextField(node, field);
-            return string.IsNullOrEmpty(text) ? null : text;
+            return string.IsNullOrEmpty(text) ? string.Empty : text;
         }
     }
 }
